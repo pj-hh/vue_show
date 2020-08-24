@@ -1,0 +1,18 @@
+<template>
+    <div>
+        <el-button type="info" @click="logout">退出</el-button>
+    </div>
+</template>
+<script type='text/ecmascript-6'>
+export default {
+  methods: {
+    logout () {
+      window.sessionStorage.clear()
+      this.$router.push('/login')
+    }
+  }
+}
+</script>
+<style lang='stylus' rel='stylesheet/stylus'>
+
+</style>
